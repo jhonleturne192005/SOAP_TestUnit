@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-com.testng.testAPI">
+              <span class="suite-name border-failed">com.testng.testAPI</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-com.testng.testAPI">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-com.testng.testAPI">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-com.testng.testAPI">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-com.testng.testAPI">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-com.testng.testAPI">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-com.testng.testAPI">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-com.testng.testAPI">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com.testng.testAPI" class="hide-methods failed suite-com.testng.testAPI"> (hide)</a> <!-- hide-methods failed suite-com.testng.testAPI -->
+                      <a href="#" panel-name="suite-com.testng.testAPI" class="show-methods failed suite-com.testng.testAPI"> (show)</a> <!-- show-methods failed suite-com.testng.testAPI -->
+                    </span>
+                    <div class="method-list-content failed suite-com.testng.testAPI">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.testng.testAPI" title="com.testng.testAPI" hash-for-method="lista_persona_TEST">lista_persona_TEST</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.testng.testAPI" title="com.testng.testAPI" hash-for-method="timeTestOne">timeTestOne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-com.testng.testAPI -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-com.testng.testAPI" class="hide-methods passed suite-com.testng.testAPI"> (hide)</a> <!-- hide-methods passed suite-com.testng.testAPI -->
+                      <a href="#" panel-name="suite-com.testng.testAPI" class="show-methods passed suite-com.testng.testAPI"> (show)</a> <!-- show-methods passed suite-com.testng.testAPI -->
+                    </span>
+                    <div class="method-list-content passed suite-com.testng.testAPI">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.testng.testAPI" title="com.testng.testAPI" hash-for-method="insertPerson_TEST">insertPerson_TEST</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.testng.testAPI" title="com.testng.testAPI" hash-for-method="insertPerson_parametros_TEST(prueba2, pruebaa2, 2222222222, prueba2@gmail.com, true)">insertPerson_parametros_TEST(prueba2, pruebaa2, 2222222222, prueba2@gmail.com, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.testng.testAPI" title="com.testng.testAPI" hash-for-method="insertPerson_parametros_TEST(prueba1, pruebaa1, 1111111111, prueba1@gmail.com, true)">insertPerson_parametros_TEST(prueba1, pruebaa1, 1111111111, prueba1@gmail.com, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-com.testng.testAPI -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-com.testng.testAPI" class="panel com.testng.testAPI">
+          <div class="suite-com.testng.testAPI-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testng.testAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="lista_persona_TEST">
+                  </a> <!-- lista_persona_TEST -->
+                  <span class="method-name">lista_persona_TEST</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [21] but found [24]
+	at com.testng.testAPI.lista_persona_TEST(testAPI.java:116)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeTestOne">
+                  </a> <!-- timeTestOne -->
+                  <span class="method-name">timeTestOne</span>
+                  <div class="stack-trace">org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.timeTestOne() didn&apos;t finish within the time-out 500
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.testng.testAPI-class-failed -->
+          <div class="suite-com.testng.testAPI-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testng.testAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertPerson_TEST">
+                  </a> <!-- insertPerson_TEST -->
+                  <span class="method-name">insertPerson_TEST</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertPerson_parametros_TEST(prueba2, pruebaa2, 2222222222, prueba2@gmail.com, true)">
+                  </a> <!-- insertPerson_parametros_TEST(prueba2, pruebaa2, 2222222222, prueba2@gmail.com, true) -->
+                  <span class="method-name">insertPerson_parametros_TEST</span>
+                  <span class="parameters">(prueba2, pruebaa2, 2222222222, prueba2@gmail.com, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertPerson_parametros_TEST(prueba1, pruebaa1, 1111111111, prueba1@gmail.com, true)">
+                  </a> <!-- insertPerson_parametros_TEST(prueba1, pruebaa1, 1111111111, prueba1@gmail.com, true) -->
+                  <span class="method-name">insertPerson_parametros_TEST</span>
+                  <span class="parameters">(prueba1, pruebaa1, 1111111111, prueba1@gmail.com, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.testng.testAPI-class-passed -->
+        </div> <!-- panel com.testng.testAPI -->
+        <div panel-name="test-xml-com.testng.testAPI" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;com.testng.testAPI&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testng.testAPI&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- com.testng.testAPI --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-com.testng.testAPI" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for com.testng.testAPI</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-com.testng.testAPI" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for com.testng.testAPI</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-com.testng.testAPI" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for com.testng.testAPI</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_com.testng.testAPI');
+function tableData_com.testng.testAPI() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'timeTestOne')
+data.setCell(0, 2, 'com.testng.testAPI')
+data.setCell(0, 3, 530);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'insertPerson_TEST')
+data.setCell(1, 2, 'com.testng.testAPI')
+data.setCell(1, 3, 317);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'lista_persona_TEST')
+data.setCell(2, 2, 'com.testng.testAPI')
+data.setCell(2, 3, 215);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'insertPerson_parametros_TEST')
+data.setCell(3, 2, 'com.testng.testAPI')
+data.setCell(3, 3, 118);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'insertPerson_parametros_TEST')
+data.setCell(4, 2, 'com.testng.testAPI')
+data.setCell(4, 3, 92);
+window.suiteTableData['com.testng.testAPI']= { tableData: data, tableDiv: 'times-div-com.testng.testAPI'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-com.testng.testAPI">
+              </div> <!-- times-div-com.testng.testAPI -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-com.testng.testAPI" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for com.testng.testAPI</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-com.testng.testAPI" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-com.testng.testAPI" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testng.testAPI</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">conexion_cerrada_TEST</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">insertPerson_TEST</span>
+                <span class="method-start">1195 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">conexion_abierta_TEST</span>
+                <span class="method-start">1512 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">conexion_cerrada_TEST</span>
+                <span class="method-start">1732 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">insertPerson_parametros_TEST(prueba1, pruebaa1, 1111111111, prueba1@gmail.com, true)</span>
+                <span class="method-start">1837 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">conexion_abierta_TEST</span>
+                <span class="method-start">1955 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">conexion_cerrada_TEST</span>
+                <span class="method-start">2148 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">insertPerson_parametros_TEST(prueba2, pruebaa2, 2222222222, prueba2@gmail.com, true)</span>
+                <span class="method-start">2343 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">conexion_abierta_TEST</span>
+                <span class="method-start">2435 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">conexion_cerrada_TEST</span>
+                <span class="method-start">2639 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">lista_persona_TEST</span>
+                <span class="method-start">2717 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">conexion_abierta_TEST</span>
+                <span class="method-start">2935 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">conexion_cerrada_TEST</span>
+                <span class="method-start">3012 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">timeTestOne</span>
+                <span class="method-start">3202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">conexion_abierta_TEST</span>
+                <span class="method-start">3733 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

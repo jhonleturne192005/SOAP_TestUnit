@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="com.mycompany.ejemploagentemovil_soapproject_war_1.0-SNAPSHOT">
+
+    <!--
+    see examples at http://testng.org/doc/documentation-main.html#testng-xml
+
+    <suite-files>
+        <suite-file path="./junit-suite.xml" />
+    </suite-files>
+    -->
+    <test name="prueba_parametros">
+        <parameter name="nombre" value="prueba"/>         
+        <parameter name="apellido" value="prueba"/> 
+        <parameter name="cedula" value="1234567892"/> 
+        <parameter name="correo" value="prueba@gmail.com"/> 
+        <parameter name="estado" value="true"/> 
+        <classes>
+            <class name="com.testng.testAPI" />
+        </classes>
+    </test>
+    <test name="All tests for com.mycompany.ejemploagentemovil_soapproject_war_1.0-SNAPSHOT">
+        <packages>
+            <package name=".*"/>
+        </packages>
+    </test>
+
+</suite>

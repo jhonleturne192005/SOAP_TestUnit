@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.testng.testAPI]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.testng.testAPI">
+        <methods>
+          <include name="conexion_abierta_TEST"/>
+          <include name="timeTestOne"/>
+          <include name="conexion_cerrada_TEST"/>
+          <include name="lista_persona_TEST"/>
+        </methods>
+      </class> <!-- com.testng.testAPI -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.testng.testAPI] -->

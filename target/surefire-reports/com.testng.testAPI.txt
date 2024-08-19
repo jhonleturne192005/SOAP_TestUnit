@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.testng.testAPI
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 5.046 sec <<< FAILURE!
+lista_persona_TEST(com.testng.testAPI)  Time elapsed: 0.217 sec  <<< FAILURE!
+java.lang.AssertionError: expected [21] but found [24]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at com.testng.testAPI.lista_persona_TEST(testAPI.java:116)
+
+timeTestOne(com.testng.testAPI)  Time elapsed: 0.53 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.timeTestOne() didn't finish within the time-out 500
+
